@@ -17,6 +17,16 @@ npm install
 pnpm install
 ```
 
+Make sure to change the database configuration in `server/db/index.ts` according to the database you have
+
+```bash
+const pool = mysql.createPool({
+    host: 'localhost',
+    user: 'root',
+    database: 'nuxt-ssr'
+});
+```
+
 ## Development Server
 
 Start the development server on `http://localhost:3000`
